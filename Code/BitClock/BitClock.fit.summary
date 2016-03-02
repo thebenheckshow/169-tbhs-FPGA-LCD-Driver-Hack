@@ -1,0 +1,16 @@
+Fitter Status : Successful - Thu Jan 01 12:44:45 2015
+Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Web Edition
+Revision Name : BitClock
+Top-level Entity Name : BitClock
+Family : Cyclone III
+Device : EP3C16F484C6
+Timing Models : Final
+Total logic elements : 111 / 15,408 ( < 1 % )
+    Total combinational functions : 111 / 15,408 ( < 1 % )
+    Dedicated logic registers : 65 / 15,408 ( < 1 % )
+Total registers : 65
+Total pins : 10 / 347 ( 3 % )
+Total virtual pins : 0
+Total memory bits : 0 / 516,096 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 112 ( 0 % )
+Total PLLs : 1 / 4 ( 25 % )

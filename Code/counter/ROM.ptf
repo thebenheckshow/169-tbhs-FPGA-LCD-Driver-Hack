@@ -1,0 +1,39 @@
+SYSTEM ROM
+{
+   System_Wizard_Version = "9.00";
+   System_Wizard_Build = "132";
+   Builder_Application = "sopc_builder_ca";
+   WIZARD_SCRIPT_ARGUMENTS 
+   {
+      hdl_language = "verilog";
+      device_family = "CYCLONEIII";
+      device_family_id = "CYCLONEIII";
+      generate_sdk = "0";
+      do_build_sim = "0";
+      hardcopy_compatible = "0";
+      CLOCKS 
+      {
+         CLOCK clk_0
+         {
+            frequency = "50000000";
+            source = "External";
+            Is_Clock_Source = "0";
+            display_name = "clk_0";
+            pipeline = "0";
+            clock_module_connection_point_for_c2h = "clk_0.clk";
+         }
+      }
+      clock_freq = "50000000";
+      clock_freq = "50000000";
+      board_class = "";
+      view_master_columns = "1";
+      view_master_priorities = "0";
+      generate_hdl = "";
+      bustype_column_width = "0";
+      clock_column_width = "80";
+      name_column_width = "75";
+      desc_column_width = "75";
+      base_column_width = "75";
+      end_column_width = "75";
+   }
+}

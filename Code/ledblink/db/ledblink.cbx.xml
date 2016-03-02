@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="ledblink">
+		<CBX_INST_ENTRY INSTANCE_NAME="|ledblink|VGA_CLK:u1|altpll:altpll_component" CBX_FILE_NAME="VGA_CLK_altpll.v"/>
+	</PROJECT>
+</LOG_ROOT>

@@ -1,0 +1,9 @@
+{ "Info" "0" "" "qar.tcl version #3" {  } {  } 0 0 "qar.tcl version #3" 0 0 "0" 0 0 1420688629470 ""}
+{ "Info" "0" "" "Including '-use_file_set basic' by default" {  } {  } 0 0 "Including '-use_file_set basic' by default" 0 0 "0" 0 0 1420688629856 ""}
+{ "Info" "0" "" "Initializing files for 'SD_FPGA' revision" {  } {  } 0 0 "Initializing files for 'SD_FPGA' revision" 0 0 "0" 0 0 1420688629910 ""}
+{ "Info" "0" "" "File Set 'Source control' contains:" { { "Info" "0" "" "Project source and settings files" {  } {  } 0 0 "Project source and settings files" 0 0 "0" 0 0 1420688629924 ""} { "Info" "0" "" "Automatically detected source files" {  } {  } 0 0 "Automatically detected source files" 0 0 "0" 0 0 1420688629924 ""}  } {  } 0 0 "File Set 'Source control' contains:" 0 0 "0" 0 0 1420688629924 ""}
+{ "Info" "0" "" "----------------------------------------------------------" {  } {  } 0 0 "----------------------------------------------------------" 0 0 "0" 0 0 1420688630068 ""}
+{ "Info" "0" "" "----------------------------------------------------------" {  } {  } 0 0 "----------------------------------------------------------" 0 0 "0" 0 0 1420688630068 ""}
+{ "Info" "0" "" "Generated archive 'SD_FPGA_tmp_archive.qar'" {  } {  } 0 0 "Generated archive 'SD_FPGA_tmp_archive.qar'" 0 0 "0" 0 0 1420688630068 ""}
+{ "Info" "0" "" "----------------------------------------------------------" {  } {  } 0 0 "----------------------------------------------------------" 0 0 "0" 0 0 1420688630068 ""}
+{ "Info" "0" "" "----------------------------------------------------------" {  } {  } 0 0 "----------------------------------------------------------" 0 0 "0" 0 0 1420688630068 ""}

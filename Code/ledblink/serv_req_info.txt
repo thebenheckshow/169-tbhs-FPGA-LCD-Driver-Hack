@@ -1,0 +1,29 @@
+<internal_error>
+	<executable>quartus_map.exe</executable>
+	<sub_system>unknown</sub_system>
+	<file>unknown</file>
+	<line>0</line>
+	<callstack>
+	0x02ee36e4: comp_qexe + 0x36e4 (??4QEXE_FRAMEWORK@@QAEAAV0@ABV0@@Z + 0x26a4)
+	0x02ee6ece: comp_qexe + 0x6ece (??4QEXE_FRAMEWORK@@QAEAAV0@ABV0@@Z + 0x5e8e)
+	0x094609ef:
+	0xffffffff8402f8c1:
+	0x110082fa:
+	0x00094607:
+	0xffffffff9bffffff:
+	0xffffffff840082fb:
+	0xffffffff9402eee7:
+	0xffffffffc40082fb:
+	0xffffffffb40082fb:
+	0xffffffff800082fd:
+	0xfffffffff0004493:
+	0x010085cd: DB_HDB + 0x785cd (?expand_single_pt_wildcard_asgns@HDB_CMP_ACTION_PT_INSTANCE@@QAI_NXZ + 0x2d)
+	0x23ffffff:
+	</callstack>
+	<error>Access Violation at 0X02EE36E4</error>
+	<date>Fri Dec 26 15:23:57 2014</date>
+	<version>Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition</version>
+	<full_error>Access Violation at 0X02EE36E4
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition </full_error>
+</internal_error>
+

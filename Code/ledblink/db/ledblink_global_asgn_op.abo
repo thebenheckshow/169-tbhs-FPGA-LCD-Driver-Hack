@@ -1,0 +1,1752 @@
+Version:
+	9.0 Build 132 02/25/2009 SJ Web Edition
+
+Chip Device Options:
+	Device Name:	EP3C16F484C6
+	Device JTAG code:	ffffffff
+	Programming_mode:	Active Serial Configuration
+	NWS_NRS_NCS:	UNRESERVED
+	RDYNBUSY:	UNRESERVED
+	DATA 7 to 1:	UNRESERVED
+	nCEO:	RESERVED_GND
+	UNUSED PINS:	RESERVED_WEAK_PULL_UP
+	Default IO Standard::	2.5 V
+	User Start-up Clock:	0
+	Auto Restart on Error:	1
+	Release Clears Before Tristates:	0
+	Device Clear:	0
+	Test And Scan:	0
+	Device OE:	0
+	Enable Lock Output:	0
+	Enable Init Done:	0
+	Enable JTAG BST:	0
+	Enable Vref A:	0
+	Enable Vref B:	0
+
+
+
+****************************
+******Individual Atoms******
+****************************
+
+- ATOM ------------------------
+	ATOM_NAME: cnt[23] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 0
+	Atom Type: cycloneiii_ff (WYSIWYG) (LAB_FF)
+
+	power up = low
+	power up dont_care = true
+
+	INPUTS (Driven By):
+		0: [CLK]	  VGA_CLK:u1|altpll:altpll_component|VGA_CLK_altpll:auto_generated|wire_pll1_clk[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [D]	  cnt[23]~67	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: [ENA]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [Q]	cnt[23]	LIT INDEX 0 FANOUTS 2 REGED POS
+
+	PARAMETER LIST:
+		power_up                       = low
+		is_wysiwyg                     = true
+
+
+- ATOM ------------------------
+	ATOM_NAME: VGA_CLK:u1|altpll:altpll_component|VGA_CLK_altpll:auto_generated|pll1 -- UNIQUE
+	Atom Hier Name: 
+	Atom Id: 1
+	Atom Type: cycloneiii_pll (WYSIWYG)
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: [FBIN]	  VGA_CLK:u1|altpll:altpll_component|VGA_CLK_altpll:auto_generated|wire_pll1_fbout	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: [INCLK]	  clk~input	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		11: [INCLK]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [PHASEDONE]	VGA_CLK:u1|altpll:altpll_component|VGA_CLK_altpll:auto_generated|pll1~PHASEDONE	LIT INDEX 0 FANOUTS 0
+		1: [SCANDATAOUT]	VGA_CLK:u1|altpll:altpll_component|VGA_CLK_altpll:auto_generated|pll1~SCANDATAOUT	LIT INDEX 0 FANOUTS 0
+		2: [SCANDONE]	VGA_CLK:u1|altpll:altpll_component|VGA_CLK_altpll:auto_generated|pll1~SCANDONE	LIT INDEX 0 FANOUTS 0
+		3: [ACTIVECLOCK]	VGA_CLK:u1|altpll:altpll_component|VGA_CLK_altpll:auto_generated|pll1~ACTIVECLOCK	LIT INDEX 0 FANOUTS 0
+		4: [LOCKED]	VGA_CLK:u1|altpll:altpll_component|VGA_CLK_altpll:auto_generated|pll1~LOCKED	LIT INDEX 0 FANOUTS 0
+		5: [VCOOVERRANGE]	VGA_CLK:u1|altpll:altpll_component|VGA_CLK_altpll:auto_generated|pll1~VCOOVERRANGE	LIT INDEX 0 FANOUTS 0
+		6: [VCOUNDERRANGE]	VGA_CLK:u1|altpll:altpll_component|VGA_CLK_altpll:auto_generated|pll1~VCOUNDERRANGE	LIT INDEX 0 FANOUTS 0
+		7: [FBOUT]	VGA_CLK:u1|altpll:altpll_component|VGA_CLK_altpll:auto_generated|wire_pll1_fbout	LIT INDEX 0 FANOUTS 1
+		8: [OBSERVABLEPHASEUPDOWNDFF]	VGA_CLK:u1|altpll:altpll_component|VGA_CLK_altpll:auto_generated|pll1~OBSERVABLEPHASEUPDOWNDFF	LIT INDEX 0 FANOUTS 0
+		9: [OBSERVABLEPHASECOUNTERSELECTDFF]	VGA_CLK:u1|altpll:altpll_component|VGA_CLK_altpll:auto_generated|pll1~OBSERVABLEPHASECOUNTERSELECTDFF	LIT INDEX 0 FANOUTS 0
+		10: [OBSERVABLESCANDFF]	VGA_CLK:u1|altpll:altpll_component|VGA_CLK_altpll:auto_generated|pll1~OBSERVABLESCANDFF	LIT INDEX 0 FANOUTS 0
+		11: [OBSERVABLEVCOOUT]	VGA_CLK:u1|altpll:altpll_component|VGA_CLK_altpll:auto_generated|pll1~OBSERVABLE_VCO_OUT	LIT INDEX 0 FANOUTS 0
+		12: [CLK]	VGA_CLK:u1|altpll:altpll_component|VGA_CLK_altpll:auto_generated|wire_pll1_clk[0]	LIT INDEX 0 FANOUTS 24
+		13: [CLK]	VGA_CLK:u1|altpll:altpll_component|VGA_CLK_altpll:auto_generated|wire_pll1_clk[1]	LIT INDEX 1 FANOUTS 0
+		14: [CLK]	VGA_CLK:u1|altpll:altpll_component|VGA_CLK_altpll:auto_generated|wire_pll1_clk[2]	LIT INDEX 2 FANOUTS 0
+		15: [CLK]	VGA_CLK:u1|altpll:altpll_component|VGA_CLK_altpll:auto_generated|wire_pll1_clk[3]	LIT INDEX 3 FANOUTS 0
+		16: [CLK]	VGA_CLK:u1|altpll:altpll_component|VGA_CLK_altpll:auto_generated|wire_pll1_clk[4]	LIT INDEX 4 FANOUTS 0
+		17: [CLKBAD]	VGA_CLK:u1|altpll:altpll_component|VGA_CLK_altpll:auto_generated|pll1~CLKBAD0	LIT INDEX 0 FANOUTS 0
+		18: [CLKBAD]	VGA_CLK:u1|altpll:altpll_component|VGA_CLK_altpll:auto_generated|pll1~CLKBAD1	LIT INDEX 1 FANOUTS 0
+
+	PARAMETER LIST:
+		operation_mode                 = normal
+		compensate_clock               = clock0
+		inclk0_input_frequency         = 20000
+		inclk1_input_frequency         = 0
+		switch_over_type               = auto
+		self_reset_on_loss_lock        = off
+		auto_settings                  = false
+		pfd_min                        = 3076
+		pfd_max                        = 200000
+		vco_min                        = 1538
+		vco_max                        = 3333
+		vco_center                     = 1538
+		scan_chain_mif_file            = 
+		INT_MIN_LOCK_PERIOD            = 10573
+		INT_MAX_LOCK_PERIOD            = 22321
+		INT_INPUT_COMP_DELAY_CHAIN_BITS = -1
+		INT_FEEDBACK_COMP_DELAY_CHAIN_BITS = -1
+		INT_COUNTER_M_DELAY_CHAIN_BITS = 0
+		INT_COUNTER_N_DELAY_CHAIN_BITS = 0
+		INT_COUNTER_C0_DELAY_CHAIN_BITS = 0
+		INT_COUNTER_C1_DELAY_CHAIN_BITS = 0
+		INT_COUNTER_C2_DELAY_CHAIN_BITS = 0
+		INT_COUNTER_C3_DELAY_CHAIN_BITS = 0
+		INT_COUNTER_C4_DELAY_CHAIN_BITS = 0
+		======= Real External and Internal Parameters ======= = 
+		bandwidth_type                 = auto
+		vco_frequency_control          = auto
+		vco_multiply_by                = 0
+		vco_divide_by                  = 0
+		vco_phase_shift_step           = 363
+		clk0_multiply_by               = 55
+		clk0_divide_by                 = 32
+		clk0_phase_shift               = 0
+		clk0_duty_cycle                = 50
+		clk1_multiply_by               = 0
+		clk1_divide_by                 = 0
+		clk1_phase_shift               = 0
+		clk1_duty_cycle                = 50
+		clk2_multiply_by               = 0
+		clk2_divide_by                 = 0
+		clk2_phase_shift               = 0
+		clk2_duty_cycle                = 50
+		clk3_multiply_by               = 0
+		clk3_divide_by                 = 0
+		clk3_phase_shift               = 0
+		clk3_duty_cycle                = 50
+		clk4_multiply_by               = 0
+		clk4_divide_by                 = 0
+		clk4_phase_shift               = 0
+		clk4_duty_cycle                = 50
+		m                              = 55
+		m_initial                      = 1
+		m_ph                           = 0
+		n                              = 8
+		vco_post_scale                 = 2
+		lock_high                      = 25
+		lock_low                       = 2
+		lock_window_ui_bits            = 3
+		charge_pump_current_bits       = 1
+		loop_filter_r_bits             = 19
+		loop_filter_c_bits             = 0
+		clk0_counter                   = c0
+		clk1_counter                   = unused
+		clk2_counter                   = unused
+		clk3_counter                   = unused
+		clk4_counter                   = unused
+		c0_high                        = 2
+		c0_low                         = 2
+		c0_initial                     = 1
+		c0_ph                          = 0
+		c0_mode                        = even
+		c1_high                        = 0
+		c1_low                         = 0
+		c1_initial                     = 0
+		c1_ph                          = 0
+		c1_mode                        = bypass
+		c1_use_casc_in                 = off
+		c2_high                        = 0
+		c2_low                         = 0
+		c2_initial                     = 0
+		c2_ph                          = 0
+		c2_mode                        = bypass
+		c2_use_casc_in                 = off
+		c3_high                        = 0
+		c3_low                         = 0
+		c3_initial                     = 0
+		c3_ph                          = 0
+		c3_mode                        = bypass
+		c3_use_casc_in                 = off
+		c4_high                        = 0
+		c4_low                         = 0
+		c4_initial                     = 0
+		c4_ph                          = 0
+		c4_mode                        = bypass
+		c4_use_casc_in                 = off
+		======= User External and Internal Parameters ======= = 
+		bandwidth_type                 = auto
+		vco_frequency_control          = auto
+		vco_multiply_by                = 0
+		vco_divide_by                  = 0
+		vco_phase_shift_step           = 0
+		clk0_multiply_by               = 859
+		clk0_divide_by                 = 500
+		clk0_phase_shift               = 0
+		clk0_duty_cycle                = 50
+		clk1_multiply_by               = 0
+		clk1_divide_by                 = 0
+		clk1_phase_shift               = 0
+		clk1_duty_cycle                = 50
+		clk2_multiply_by               = 0
+		clk2_divide_by                 = 0
+		clk2_phase_shift               = 0
+		clk2_duty_cycle                = 50
+		clk3_multiply_by               = 0
+		clk3_divide_by                 = 0
+		clk3_phase_shift               = 0
+		clk3_duty_cycle                = 50
+		clk4_multiply_by               = 0
+		clk4_divide_by                 = 0
+		clk4_phase_shift               = 0
+		clk4_duty_cycle                = 50
+		m                              = 0
+		m_initial                      = 1
+		m_ph                           = 0
+		n                              = 19
+		vco_post_scale                 = 1
+		lock_high                      = -1
+		lock_low                       = -1
+		lock_window_ui_bits            = -1
+		charge_pump_current_bits       = 2
+		loop_filter_r_bits             = 1
+		loop_filter_c_bits             = 2
+		clk0_counter                   = c0
+		clk1_counter                   = unused
+		clk2_counter                   = unused
+		clk3_counter                   = unused
+		clk4_counter                   = unused
+		c0_high                        = 7
+		c0_low                         = 7
+		c0_initial                     = 1
+		c0_ph                          = 0
+		c0_mode                        = even
+		c1_high                        = 1
+		c1_low                         = 1
+		c1_initial                     = 1
+		c1_ph                          = 0
+		c1_mode                        = bypass
+		c1_use_casc_in                 = off
+		c2_high                        = 1
+		c2_low                         = 1
+		c2_initial                     = 1
+		c2_ph                          = 0
+		c2_mode                        = bypass
+		c2_use_casc_in                 = off
+		c3_high                        = 1
+		c3_low                         = 1
+		c3_initial                     = 1
+		c3_ph                          = 0
+		c3_mode                        = bypass
+		c3_use_casc_in                 = off
+		c4_high                        = 1
+		c4_low                         = 1
+		c4_initial                     = 1
+		c4_ph                          = 0
+		c4_mode                        = bypass
+		c4_use_casc_in                 = off
+
+
+- ATOM ------------------------
+	ATOM_NAME: cnt[22] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 2
+	Atom Type: cycloneiii_ff (WYSIWYG) (LAB_FF)
+
+	power up = low
+	power up dont_care = true
+
+	INPUTS (Driven By):
+		0: [CLK]	  VGA_CLK:u1|altpll:altpll_component|VGA_CLK_altpll:auto_generated|wire_pll1_clk[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [D]	  cnt[22]~65	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: [ENA]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [Q]	cnt[22]	LIT INDEX 0 FANOUTS 1 REGED POS
+
+	PARAMETER LIST:
+		power_up                       = low
+		is_wysiwyg                     = true
+
+
+- ATOM ------------------------
+	ATOM_NAME: cnt[21] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 3
+	Atom Type: cycloneiii_ff (WYSIWYG) (LAB_FF)
+
+	power up = low
+	power up dont_care = true
+
+	INPUTS (Driven By):
+		0: [CLK]	  VGA_CLK:u1|altpll:altpll_component|VGA_CLK_altpll:auto_generated|wire_pll1_clk[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [D]	  cnt[21]~63	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: [ENA]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [Q]	cnt[21]	LIT INDEX 0 FANOUTS 1 REGED POS
+
+	PARAMETER LIST:
+		power_up                       = low
+		is_wysiwyg                     = true
+
+
+- ATOM ------------------------
+	ATOM_NAME: cnt[20] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 4
+	Atom Type: cycloneiii_ff (WYSIWYG) (LAB_FF)
+
+	power up = low
+	power up dont_care = true
+
+	INPUTS (Driven By):
+		0: [CLK]	  VGA_CLK:u1|altpll:altpll_component|VGA_CLK_altpll:auto_generated|wire_pll1_clk[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [D]	  cnt[20]~61	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: [ENA]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [Q]	cnt[20]	LIT INDEX 0 FANOUTS 1 REGED POS
+
+	PARAMETER LIST:
+		power_up                       = low
+		is_wysiwyg                     = true
+
+
+- ATOM ------------------------
+	ATOM_NAME: cnt[19] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 5
+	Atom Type: cycloneiii_ff (WYSIWYG) (LAB_FF)
+
+	power up = low
+	power up dont_care = true
+
+	INPUTS (Driven By):
+		0: [CLK]	  VGA_CLK:u1|altpll:altpll_component|VGA_CLK_altpll:auto_generated|wire_pll1_clk[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [D]	  cnt[19]~59	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: [ENA]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [Q]	cnt[19]	LIT INDEX 0 FANOUTS 1 REGED POS
+
+	PARAMETER LIST:
+		power_up                       = low
+		is_wysiwyg                     = true
+
+
+- ATOM ------------------------
+	ATOM_NAME: cnt[18] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 6
+	Atom Type: cycloneiii_ff (WYSIWYG) (LAB_FF)
+
+	power up = low
+	power up dont_care = true
+
+	INPUTS (Driven By):
+		0: [CLK]	  VGA_CLK:u1|altpll:altpll_component|VGA_CLK_altpll:auto_generated|wire_pll1_clk[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [D]	  cnt[18]~57	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: [ENA]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [Q]	cnt[18]	LIT INDEX 0 FANOUTS 1 REGED POS
+
+	PARAMETER LIST:
+		power_up                       = low
+		is_wysiwyg                     = true
+
+
+- ATOM ------------------------
+	ATOM_NAME: cnt[17] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 7
+	Atom Type: cycloneiii_ff (WYSIWYG) (LAB_FF)
+
+	power up = low
+	power up dont_care = true
+
+	INPUTS (Driven By):
+		0: [CLK]	  VGA_CLK:u1|altpll:altpll_component|VGA_CLK_altpll:auto_generated|wire_pll1_clk[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [D]	  cnt[17]~55	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: [ENA]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [Q]	cnt[17]	LIT INDEX 0 FANOUTS 1 REGED POS
+
+	PARAMETER LIST:
+		power_up                       = low
+		is_wysiwyg                     = true
+
+
+- ATOM ------------------------
+	ATOM_NAME: cnt[16] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 8
+	Atom Type: cycloneiii_ff (WYSIWYG) (LAB_FF)
+
+	power up = low
+	power up dont_care = true
+
+	INPUTS (Driven By):
+		0: [CLK]	  VGA_CLK:u1|altpll:altpll_component|VGA_CLK_altpll:auto_generated|wire_pll1_clk[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [D]	  cnt[16]~53	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: [ENA]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [Q]	cnt[16]	LIT INDEX 0 FANOUTS 1 REGED POS
+
+	PARAMETER LIST:
+		power_up                       = low
+		is_wysiwyg                     = true
+
+
+- ATOM ------------------------
+	ATOM_NAME: cnt[15] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 9
+	Atom Type: cycloneiii_ff (WYSIWYG) (LAB_FF)
+
+	power up = low
+	power up dont_care = true
+
+	INPUTS (Driven By):
+		0: [CLK]	  VGA_CLK:u1|altpll:altpll_component|VGA_CLK_altpll:auto_generated|wire_pll1_clk[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [D]	  cnt[15]~51	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: [ENA]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [Q]	cnt[15]	LIT INDEX 0 FANOUTS 1 REGED POS
+
+	PARAMETER LIST:
+		power_up                       = low
+		is_wysiwyg                     = true
+
+
+- ATOM ------------------------
+	ATOM_NAME: cnt[14] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 10
+	Atom Type: cycloneiii_ff (WYSIWYG) (LAB_FF)
+
+	power up = low
+	power up dont_care = true
+
+	INPUTS (Driven By):
+		0: [CLK]	  VGA_CLK:u1|altpll:altpll_component|VGA_CLK_altpll:auto_generated|wire_pll1_clk[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [D]	  cnt[14]~49	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: [ENA]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [Q]	cnt[14]	LIT INDEX 0 FANOUTS 1 REGED POS
+
+	PARAMETER LIST:
+		power_up                       = low
+		is_wysiwyg                     = true
+
+
+- ATOM ------------------------
+	ATOM_NAME: cnt[13] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 11
+	Atom Type: cycloneiii_ff (WYSIWYG) (LAB_FF)
+
+	power up = low
+	power up dont_care = true
+
+	INPUTS (Driven By):
+		0: [CLK]	  VGA_CLK:u1|altpll:altpll_component|VGA_CLK_altpll:auto_generated|wire_pll1_clk[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [D]	  cnt[13]~47	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: [ENA]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [Q]	cnt[13]	LIT INDEX 0 FANOUTS 1 REGED POS
+
+	PARAMETER LIST:
+		power_up                       = low
+		is_wysiwyg                     = true
+
+
+- ATOM ------------------------
+	ATOM_NAME: cnt[12] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 12
+	Atom Type: cycloneiii_ff (WYSIWYG) (LAB_FF)
+
+	power up = low
+	power up dont_care = true
+
+	INPUTS (Driven By):
+		0: [CLK]	  VGA_CLK:u1|altpll:altpll_component|VGA_CLK_altpll:auto_generated|wire_pll1_clk[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [D]	  cnt[12]~45	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: [ENA]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [Q]	cnt[12]	LIT INDEX 0 FANOUTS 1 REGED POS
+
+	PARAMETER LIST:
+		power_up                       = low
+		is_wysiwyg                     = true
+
+
+- ATOM ------------------------
+	ATOM_NAME: cnt[11] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 13
+	Atom Type: cycloneiii_ff (WYSIWYG) (LAB_FF)
+
+	power up = low
+	power up dont_care = true
+
+	INPUTS (Driven By):
+		0: [CLK]	  VGA_CLK:u1|altpll:altpll_component|VGA_CLK_altpll:auto_generated|wire_pll1_clk[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [D]	  cnt[11]~43	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: [ENA]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [Q]	cnt[11]	LIT INDEX 0 FANOUTS 1 REGED POS
+
+	PARAMETER LIST:
+		power_up                       = low
+		is_wysiwyg                     = true
+
+
+- ATOM ------------------------
+	ATOM_NAME: cnt[10] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 14
+	Atom Type: cycloneiii_ff (WYSIWYG) (LAB_FF)
+
+	power up = low
+	power up dont_care = true
+
+	INPUTS (Driven By):
+		0: [CLK]	  VGA_CLK:u1|altpll:altpll_component|VGA_CLK_altpll:auto_generated|wire_pll1_clk[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [D]	  cnt[10]~41	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: [ENA]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [Q]	cnt[10]	LIT INDEX 0 FANOUTS 1 REGED POS
+
+	PARAMETER LIST:
+		power_up                       = low
+		is_wysiwyg                     = true
+
+
+- ATOM ------------------------
+	ATOM_NAME: cnt[9] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 15
+	Atom Type: cycloneiii_ff (WYSIWYG) (LAB_FF)
+
+	power up = low
+	power up dont_care = true
+
+	INPUTS (Driven By):
+		0: [CLK]	  VGA_CLK:u1|altpll:altpll_component|VGA_CLK_altpll:auto_generated|wire_pll1_clk[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [D]	  cnt[9]~39	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: [ENA]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [Q]	cnt[9]	LIT INDEX 0 FANOUTS 1 REGED POS
+
+	PARAMETER LIST:
+		power_up                       = low
+		is_wysiwyg                     = true
+
+
+- ATOM ------------------------
+	ATOM_NAME: cnt[8] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 16
+	Atom Type: cycloneiii_ff (WYSIWYG) (LAB_FF)
+
+	power up = low
+	power up dont_care = true
+
+	INPUTS (Driven By):
+		0: [CLK]	  VGA_CLK:u1|altpll:altpll_component|VGA_CLK_altpll:auto_generated|wire_pll1_clk[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [D]	  cnt[8]~37	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: [ENA]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [Q]	cnt[8]	LIT INDEX 0 FANOUTS 1 REGED POS
+
+	PARAMETER LIST:
+		power_up                       = low
+		is_wysiwyg                     = true
+
+
+- ATOM ------------------------
+	ATOM_NAME: cnt[7] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 17
+	Atom Type: cycloneiii_ff (WYSIWYG) (LAB_FF)
+
+	power up = low
+	power up dont_care = true
+
+	INPUTS (Driven By):
+		0: [CLK]	  VGA_CLK:u1|altpll:altpll_component|VGA_CLK_altpll:auto_generated|wire_pll1_clk[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [D]	  cnt[7]~35	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: [ENA]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [Q]	cnt[7]	LIT INDEX 0 FANOUTS 1 REGED POS
+
+	PARAMETER LIST:
+		power_up                       = low
+		is_wysiwyg                     = true
+
+
+- ATOM ------------------------
+	ATOM_NAME: cnt[6] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 18
+	Atom Type: cycloneiii_ff (WYSIWYG) (LAB_FF)
+
+	power up = low
+	power up dont_care = true
+
+	INPUTS (Driven By):
+		0: [CLK]	  VGA_CLK:u1|altpll:altpll_component|VGA_CLK_altpll:auto_generated|wire_pll1_clk[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [D]	  cnt[6]~33	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: [ENA]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [Q]	cnt[6]	LIT INDEX 0 FANOUTS 1 REGED POS
+
+	PARAMETER LIST:
+		power_up                       = low
+		is_wysiwyg                     = true
+
+
+- ATOM ------------------------
+	ATOM_NAME: cnt[5] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 19
+	Atom Type: cycloneiii_ff (WYSIWYG) (LAB_FF)
+
+	power up = low
+	power up dont_care = true
+
+	INPUTS (Driven By):
+		0: [CLK]	  VGA_CLK:u1|altpll:altpll_component|VGA_CLK_altpll:auto_generated|wire_pll1_clk[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [D]	  cnt[5]~31	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: [ENA]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [Q]	cnt[5]	LIT INDEX 0 FANOUTS 1 REGED POS
+
+	PARAMETER LIST:
+		power_up                       = low
+		is_wysiwyg                     = true
+
+
+- ATOM ------------------------
+	ATOM_NAME: cnt[4] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 20
+	Atom Type: cycloneiii_ff (WYSIWYG) (LAB_FF)
+
+	power up = low
+	power up dont_care = true
+
+	INPUTS (Driven By):
+		0: [CLK]	  VGA_CLK:u1|altpll:altpll_component|VGA_CLK_altpll:auto_generated|wire_pll1_clk[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [D]	  cnt[4]~29	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: [ENA]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [Q]	cnt[4]	LIT INDEX 0 FANOUTS 1 REGED POS
+
+	PARAMETER LIST:
+		power_up                       = low
+		is_wysiwyg                     = true
+
+
+- ATOM ------------------------
+	ATOM_NAME: cnt[3] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 21
+	Atom Type: cycloneiii_ff (WYSIWYG) (LAB_FF)
+
+	power up = low
+	power up dont_care = true
+
+	INPUTS (Driven By):
+		0: [CLK]	  VGA_CLK:u1|altpll:altpll_component|VGA_CLK_altpll:auto_generated|wire_pll1_clk[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [D]	  cnt[3]~27	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: [ENA]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [Q]	cnt[3]	LIT INDEX 0 FANOUTS 1 REGED POS
+
+	PARAMETER LIST:
+		power_up                       = low
+		is_wysiwyg                     = true
+
+
+- ATOM ------------------------
+	ATOM_NAME: cnt[2] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 22
+	Atom Type: cycloneiii_ff (WYSIWYG) (LAB_FF)
+
+	power up = low
+	power up dont_care = true
+
+	INPUTS (Driven By):
+		0: [CLK]	  VGA_CLK:u1|altpll:altpll_component|VGA_CLK_altpll:auto_generated|wire_pll1_clk[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [D]	  cnt[2]~25	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: [ENA]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [Q]	cnt[2]	LIT INDEX 0 FANOUTS 1 REGED POS
+
+	PARAMETER LIST:
+		power_up                       = low
+		is_wysiwyg                     = true
+
+
+- ATOM ------------------------
+	ATOM_NAME: cnt[1] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 23
+	Atom Type: cycloneiii_ff (WYSIWYG) (LAB_FF)
+
+	power up = low
+	power up dont_care = true
+
+	INPUTS (Driven By):
+		0: [CLK]	  VGA_CLK:u1|altpll:altpll_component|VGA_CLK_altpll:auto_generated|wire_pll1_clk[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [D]	  cnt[1]~23	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: [ENA]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [Q]	cnt[1]	LIT INDEX 0 FANOUTS 1 REGED POS
+
+	PARAMETER LIST:
+		power_up                       = low
+		is_wysiwyg                     = true
+
+
+- ATOM ------------------------
+	ATOM_NAME: cnt[1]~23 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 24
+	Atom Type: cycloneiii_lcell_comb (WYSIWYG)
+
+	INPUTS (Driven By):
+		0: [DATAA]	  cnt[1]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	  cnt[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: NO ITERM
+		3: [DATAD]	  VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	cnt[1]~23	LIT INDEX 0 FANOUTS 1
+		1: [COUT]	cnt[1]~24	LIT INDEX 0 FANOUTS 1
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = 6688
+
+
+- ATOM ------------------------
+	ATOM_NAME: cnt[2]~25 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 25
+	Atom Type: cycloneiii_lcell_comb (WYSIWYG)
+
+	INPUTS (Driven By):
+		0: [DATAA]	  cnt[2]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: [DATAD]	  VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [CIN]	  cnt[1]~24	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	cnt[2]~25	LIT INDEX 0 FANOUTS 1
+		1: [COUT]	cnt[2]~26	LIT INDEX 0 FANOUTS 1
+
+	PARAMETER LIST:
+		sum_lutc_input                 = cin
+		lut_mask                       = 5a5f
+
+
+- ATOM ------------------------
+	ATOM_NAME: cnt[3]~27 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 26
+	Atom Type: cycloneiii_lcell_comb (WYSIWYG)
+
+	INPUTS (Driven By):
+		0: [DATAA]	  cnt[3]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: [DATAD]	  VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [CIN]	  cnt[2]~26	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	cnt[3]~27	LIT INDEX 0 FANOUTS 1
+		1: [COUT]	cnt[3]~28	LIT INDEX 0 FANOUTS 1
+
+	PARAMETER LIST:
+		sum_lutc_input                 = cin
+		lut_mask                       = a50a
+
+
+- ATOM ------------------------
+	ATOM_NAME: cnt[4]~29 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 27
+	Atom Type: cycloneiii_lcell_comb (WYSIWYG)
+
+	INPUTS (Driven By):
+		0: [DATAA]	  cnt[4]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: [DATAD]	  VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [CIN]	  cnt[3]~28	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	cnt[4]~29	LIT INDEX 0 FANOUTS 1
+		1: [COUT]	cnt[4]~30	LIT INDEX 0 FANOUTS 1
+
+	PARAMETER LIST:
+		sum_lutc_input                 = cin
+		lut_mask                       = 5a5f
+
+
+- ATOM ------------------------
+	ATOM_NAME: cnt[5]~31 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 28
+	Atom Type: cycloneiii_lcell_comb (WYSIWYG)
+
+	INPUTS (Driven By):
+		0: [DATAA]	  cnt[5]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: [DATAD]	  VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [CIN]	  cnt[4]~30	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	cnt[5]~31	LIT INDEX 0 FANOUTS 1
+		1: [COUT]	cnt[5]~32	LIT INDEX 0 FANOUTS 1
+
+	PARAMETER LIST:
+		sum_lutc_input                 = cin
+		lut_mask                       = a50a
+
+
+- ATOM ------------------------
+	ATOM_NAME: cnt[6]~33 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 29
+	Atom Type: cycloneiii_lcell_comb (WYSIWYG)
+
+	INPUTS (Driven By):
+		0: [DATAA]	  cnt[6]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: [DATAD]	  VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [CIN]	  cnt[5]~32	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	cnt[6]~33	LIT INDEX 0 FANOUTS 1
+		1: [COUT]	cnt[6]~34	LIT INDEX 0 FANOUTS 1
+
+	PARAMETER LIST:
+		sum_lutc_input                 = cin
+		lut_mask                       = 5a5f
+
+
+- ATOM ------------------------
+	ATOM_NAME: cnt[7]~35 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 30
+	Atom Type: cycloneiii_lcell_comb (WYSIWYG)
+
+	INPUTS (Driven By):
+		0: [DATAA]	  cnt[7]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: [DATAD]	  VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [CIN]	  cnt[6]~34	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	cnt[7]~35	LIT INDEX 0 FANOUTS 1
+		1: [COUT]	cnt[7]~36	LIT INDEX 0 FANOUTS 1
+
+	PARAMETER LIST:
+		sum_lutc_input                 = cin
+		lut_mask                       = a50a
+
+
+- ATOM ------------------------
+	ATOM_NAME: cnt[8]~37 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 31
+	Atom Type: cycloneiii_lcell_comb (WYSIWYG)
+
+	INPUTS (Driven By):
+		0: [DATAA]	  cnt[8]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: [DATAD]	  VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [CIN]	  cnt[7]~36	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	cnt[8]~37	LIT INDEX 0 FANOUTS 1
+		1: [COUT]	cnt[8]~38	LIT INDEX 0 FANOUTS 1
+
+	PARAMETER LIST:
+		sum_lutc_input                 = cin
+		lut_mask                       = 5a5f
+
+
+- ATOM ------------------------
+	ATOM_NAME: cnt[9]~39 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 32
+	Atom Type: cycloneiii_lcell_comb (WYSIWYG)
+
+	INPUTS (Driven By):
+		0: [DATAA]	  cnt[9]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: [DATAD]	  VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [CIN]	  cnt[8]~38	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	cnt[9]~39	LIT INDEX 0 FANOUTS 1
+		1: [COUT]	cnt[9]~40	LIT INDEX 0 FANOUTS 1
+
+	PARAMETER LIST:
+		sum_lutc_input                 = cin
+		lut_mask                       = a50a
+
+
+- ATOM ------------------------
+	ATOM_NAME: cnt[10]~41 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 33
+	Atom Type: cycloneiii_lcell_comb (WYSIWYG)
+
+	INPUTS (Driven By):
+		0: [DATAA]	  cnt[10]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: [DATAD]	  VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [CIN]	  cnt[9]~40	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	cnt[10]~41	LIT INDEX 0 FANOUTS 1
+		1: [COUT]	cnt[10]~42	LIT INDEX 0 FANOUTS 1
+
+	PARAMETER LIST:
+		sum_lutc_input                 = cin
+		lut_mask                       = 5a5f
+
+
+- ATOM ------------------------
+	ATOM_NAME: cnt[11]~43 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 34
+	Atom Type: cycloneiii_lcell_comb (WYSIWYG)
+
+	INPUTS (Driven By):
+		0: [DATAA]	  cnt[11]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: [DATAD]	  VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [CIN]	  cnt[10]~42	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	cnt[11]~43	LIT INDEX 0 FANOUTS 1
+		1: [COUT]	cnt[11]~44	LIT INDEX 0 FANOUTS 1
+
+	PARAMETER LIST:
+		sum_lutc_input                 = cin
+		lut_mask                       = a50a
+
+
+- ATOM ------------------------
+	ATOM_NAME: cnt[12]~45 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 35
+	Atom Type: cycloneiii_lcell_comb (WYSIWYG)
+
+	INPUTS (Driven By):
+		0: [DATAA]	  cnt[12]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: [DATAD]	  VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [CIN]	  cnt[11]~44	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	cnt[12]~45	LIT INDEX 0 FANOUTS 1
+		1: [COUT]	cnt[12]~46	LIT INDEX 0 FANOUTS 1
+
+	PARAMETER LIST:
+		sum_lutc_input                 = cin
+		lut_mask                       = 5a5f
+
+
+- ATOM ------------------------
+	ATOM_NAME: cnt[13]~47 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 36
+	Atom Type: cycloneiii_lcell_comb (WYSIWYG)
+
+	INPUTS (Driven By):
+		0: [DATAA]	  cnt[13]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: [DATAD]	  VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [CIN]	  cnt[12]~46	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	cnt[13]~47	LIT INDEX 0 FANOUTS 1
+		1: [COUT]	cnt[13]~48	LIT INDEX 0 FANOUTS 1
+
+	PARAMETER LIST:
+		sum_lutc_input                 = cin
+		lut_mask                       = a50a
+
+
+- ATOM ------------------------
+	ATOM_NAME: cnt[14]~49 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 37
+	Atom Type: cycloneiii_lcell_comb (WYSIWYG)
+
+	INPUTS (Driven By):
+		0: [DATAA]	  cnt[14]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: [DATAD]	  VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [CIN]	  cnt[13]~48	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	cnt[14]~49	LIT INDEX 0 FANOUTS 1
+		1: [COUT]	cnt[14]~50	LIT INDEX 0 FANOUTS 1
+
+	PARAMETER LIST:
+		sum_lutc_input                 = cin
+		lut_mask                       = 5a5f
+
+
+- ATOM ------------------------
+	ATOM_NAME: cnt[15]~51 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 38
+	Atom Type: cycloneiii_lcell_comb (WYSIWYG)
+
+	INPUTS (Driven By):
+		0: [DATAA]	  cnt[15]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: [DATAD]	  VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [CIN]	  cnt[14]~50	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	cnt[15]~51	LIT INDEX 0 FANOUTS 1
+		1: [COUT]	cnt[15]~52	LIT INDEX 0 FANOUTS 1
+
+	PARAMETER LIST:
+		sum_lutc_input                 = cin
+		lut_mask                       = a50a
+
+
+- ATOM ------------------------
+	ATOM_NAME: cnt[16]~53 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 39
+	Atom Type: cycloneiii_lcell_comb (WYSIWYG)
+
+	INPUTS (Driven By):
+		0: [DATAA]	  cnt[16]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: [DATAD]	  VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [CIN]	  cnt[15]~52	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	cnt[16]~53	LIT INDEX 0 FANOUTS 1
+		1: [COUT]	cnt[16]~54	LIT INDEX 0 FANOUTS 1
+
+	PARAMETER LIST:
+		sum_lutc_input                 = cin
+		lut_mask                       = 5a5f
+
+
+- ATOM ------------------------
+	ATOM_NAME: cnt[17]~55 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 40
+	Atom Type: cycloneiii_lcell_comb (WYSIWYG)
+
+	INPUTS (Driven By):
+		0: [DATAA]	  cnt[17]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: [DATAD]	  VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [CIN]	  cnt[16]~54	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	cnt[17]~55	LIT INDEX 0 FANOUTS 1
+		1: [COUT]	cnt[17]~56	LIT INDEX 0 FANOUTS 1
+
+	PARAMETER LIST:
+		sum_lutc_input                 = cin
+		lut_mask                       = a50a
+
+
+- ATOM ------------------------
+	ATOM_NAME: cnt[18]~57 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 41
+	Atom Type: cycloneiii_lcell_comb (WYSIWYG)
+
+	INPUTS (Driven By):
+		0: [DATAA]	  cnt[18]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: [DATAD]	  VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [CIN]	  cnt[17]~56	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	cnt[18]~57	LIT INDEX 0 FANOUTS 1
+		1: [COUT]	cnt[18]~58	LIT INDEX 0 FANOUTS 1
+
+	PARAMETER LIST:
+		sum_lutc_input                 = cin
+		lut_mask                       = 5a5f
+
+
+- ATOM ------------------------
+	ATOM_NAME: cnt[19]~59 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 42
+	Atom Type: cycloneiii_lcell_comb (WYSIWYG)
+
+	INPUTS (Driven By):
+		0: [DATAA]	  cnt[19]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: [DATAD]	  VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [CIN]	  cnt[18]~58	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	cnt[19]~59	LIT INDEX 0 FANOUTS 1
+		1: [COUT]	cnt[19]~60	LIT INDEX 0 FANOUTS 1
+
+	PARAMETER LIST:
+		sum_lutc_input                 = cin
+		lut_mask                       = a50a
+
+
+- ATOM ------------------------
+	ATOM_NAME: cnt[20]~61 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 43
+	Atom Type: cycloneiii_lcell_comb (WYSIWYG)
+
+	INPUTS (Driven By):
+		0: [DATAA]	  cnt[20]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: [DATAD]	  VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [CIN]	  cnt[19]~60	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	cnt[20]~61	LIT INDEX 0 FANOUTS 1
+		1: [COUT]	cnt[20]~62	LIT INDEX 0 FANOUTS 1
+
+	PARAMETER LIST:
+		sum_lutc_input                 = cin
+		lut_mask                       = 5a5f
+
+
+- ATOM ------------------------
+	ATOM_NAME: cnt[21]~63 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 44
+	Atom Type: cycloneiii_lcell_comb (WYSIWYG)
+
+	INPUTS (Driven By):
+		0: [DATAA]	  cnt[21]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: [DATAD]	  VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [CIN]	  cnt[20]~62	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	cnt[21]~63	LIT INDEX 0 FANOUTS 1
+		1: [COUT]	cnt[21]~64	LIT INDEX 0 FANOUTS 1
+
+	PARAMETER LIST:
+		sum_lutc_input                 = cin
+		lut_mask                       = a50a
+
+
+- ATOM ------------------------
+	ATOM_NAME: cnt[22]~65 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 45
+	Atom Type: cycloneiii_lcell_comb (WYSIWYG)
+
+	INPUTS (Driven By):
+		0: [DATAA]	  cnt[22]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: [DATAD]	  VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [CIN]	  cnt[21]~64	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	cnt[22]~65	LIT INDEX 0 FANOUTS 1
+		1: [COUT]	cnt[22]~66	LIT INDEX 0 FANOUTS 1
+
+	PARAMETER LIST:
+		sum_lutc_input                 = cin
+		lut_mask                       = 5a5f
+
+
+- ATOM ------------------------
+	ATOM_NAME: cnt[23]~67 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 46
+	Atom Type: cycloneiii_lcell_comb (WYSIWYG)
+
+	INPUTS (Driven By):
+		0: [DATAA]	  cnt[23]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: [CIN]	  cnt[22]~66	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	cnt[23]~67	LIT INDEX 0 FANOUTS 1
+		1: [COUT]	cnt[23]~68	LIT INDEX 0 FANOUTS 0
+
+	PARAMETER LIST:
+		sum_lutc_input                 = cin
+		lut_mask                       = a5a5
+
+
+- ATOM ------------------------
+	ATOM_NAME: cnt[0] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 48
+	Atom Type: cycloneiii_ff (LAB_FF)
+
+	power up = low
+	power up dont_care = true
+
+	INPUTS (Driven By):
+		0: [CLK]	  VGA_CLK:u1|altpll:altpll_component|VGA_CLK_altpll:auto_generated|wire_pll1_clk[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [D]	  cnt[0]~69	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [Q]	cnt[0]	LIT INDEX 0 FANOUTS 2 REGED POS
+
+	PARAMETER LIST:
+		power_up                       = low
+		is_wysiwyg                     = true
+
+
+- ATOM ------------------------
+	ATOM_NAME: cnt[0]~69 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 50
+	Atom Type: cycloneiii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  cnt[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	cnt[0]~69	LIT INDEX 0 FANOUTS 1
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = 5555
+
+
+- ATOM ------------------------
+	ATOM_NAME: LED~output -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 55
+	Atom Type: cycloneiii_io_obuf
+
+	INPUTS (Driven By):
+		0: [I]	  LED~output_pseudo_diff	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [O]	LED~output	LIT INDEX 0 FANOUTS 1
+		1: NONE
+
+	PARAMETER LIST:
+		open_drain_output              = false
+		bus_hold                       = false
+
+
+- ATOM ------------------------
+	ATOM_NAME: LED -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 56
+	Atom Type: cycloneiii_io_pad
+
+	INPUTS (Driven By):
+		0: [PADIN]	  LED~output	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [PADOUT]	LED	LIT INDEX 0 FANOUTS 0
+
+	PARAMETER LIST:
+		EMPTY!!
+
+	DELAY CHAINS:
+		Input Pin to Logic Array Delay 0:	0
+		Input Pin to Logic Array Delay 1:	0
+		Output Pin Delay:	0
+		Output Enable Register Tco Delay:	0
+		Input Pin to Input Register Delay:	0
+		PCI Clock Delay Chain:	0
+
+	IO STANDARD:			Bus LVDS
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+
+- ATOM ------------------------
+	ATOM_NAME: clk~input -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 57
+	Atom Type: cycloneiii_io_ibuf
+
+	INPUTS (Driven By):
+		0: [I]	  clk	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [O]	clk~input	LIT INDEX 0 FANOUTS 1
+
+	PARAMETER LIST:
+		bus_hold                       = false
+		simulate_z_as                  = z
+
+
+- ATOM ------------------------
+	ATOM_NAME: clk -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 58
+	Atom Type: cycloneiii_io_pad
+
+	INPUTS (Driven By):
+		0: [PADIN]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [PADOUT]	clk	LIT INDEX 0 FANOUTS 1
+
+	PARAMETER LIST:
+		EMPTY!!
+
+	DELAY CHAINS:
+		Input Pin to Logic Array Delay 0:	0
+		Input Pin to Logic Array Delay 1:	0
+		Output Pin Delay:	0
+		Output Enable Register Tco Delay:	0
+		Input Pin to Input Register Delay:	0
+		PCI Clock Delay Chain:	0
+
+	IO STANDARD:			2.5 V
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		ON
+
+- ATOM ------------------------
+	ATOM_NAME: ~QUARTUS_CREATED_GND~I -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 59
+	Atom Type: cycloneiii_lcell_comb
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	~QUARTUS_CREATED_GND~I	LIT INDEX 0 FANOUTS 0
+		1: NONE
+
+	PARAMETER LIST:
+		(Skipping parameters for lcell or lcell comb with no fanout)
+
+
+- ATOM ------------------------
+	ATOM_NAME: ~ALTERA_ASDO_DATA1~~ibuf -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 61
+	Atom Type: cycloneiii_io_ibuf
+
+	INPUTS (Driven By):
+		0: [I]	  ~ALTERA_ASDO_DATA1~	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [O]	~ALTERA_ASDO_DATA1~~ibuf	LIT INDEX 0 FANOUTS 0
+
+	PARAMETER LIST:
+		bus_hold                       = false
+		simulate_z_as                  = z
+
+
+- ATOM ------------------------
+	ATOM_NAME: ~ALTERA_ASDO_DATA1~ -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 60
+	Atom Type: cycloneiii_io_pad
+
+	INPUTS (Driven By):
+		0: [PADIN]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [PADOUT]	~ALTERA_ASDO_DATA1~	LIT INDEX 0 FANOUTS 1
+
+	PARAMETER LIST:
+		EMPTY!!
+
+	DELAY CHAINS:
+		Input Pin to Logic Array Delay 0:	0
+		Input Pin to Logic Array Delay 1:	0
+		Output Pin Delay:	0
+		Output Enable Register Tco Delay:	0
+		Input Pin to Input Register Delay:	0
+		PCI Clock Delay Chain:	0
+
+	IO STANDARD:			2.5 V
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+
+- ATOM ------------------------
+	ATOM_NAME: ~ALTERA_FLASH_nCE_nCSO~~ibuf -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 63
+	Atom Type: cycloneiii_io_ibuf
+
+	INPUTS (Driven By):
+		0: [I]	  ~ALTERA_FLASH_nCE_nCSO~	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [O]	~ALTERA_FLASH_nCE_nCSO~~ibuf	LIT INDEX 0 FANOUTS 0
+
+	PARAMETER LIST:
+		bus_hold                       = false
+		simulate_z_as                  = z
+
+
+- ATOM ------------------------
+	ATOM_NAME: ~ALTERA_FLASH_nCE_nCSO~ -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 62
+	Atom Type: cycloneiii_io_pad
+
+	INPUTS (Driven By):
+		0: [PADIN]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [PADOUT]	~ALTERA_FLASH_nCE_nCSO~	LIT INDEX 0 FANOUTS 1
+
+	PARAMETER LIST:
+		EMPTY!!
+
+	DELAY CHAINS:
+		Input Pin to Logic Array Delay 0:	0
+		Input Pin to Logic Array Delay 1:	0
+		Output Pin Delay:	0
+		Output Enable Register Tco Delay:	0
+		Input Pin to Input Register Delay:	0
+		PCI Clock Delay Chain:	0
+
+	IO STANDARD:			2.5 V
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+
+- ATOM ------------------------
+	ATOM_NAME: ~ALTERA_DCLK~~obuf -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 65
+	Atom Type: cycloneiii_io_obuf
+
+	INPUTS (Driven By):
+		0: [I]	  GND	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [O]	~ALTERA_DCLK~~obuf	LIT INDEX 0 FANOUTS 1
+		1: NONE
+
+	PARAMETER LIST:
+		open_drain_output              = false
+		bus_hold                       = false
+
+
+- ATOM ------------------------
+	ATOM_NAME: ~ALTERA_DCLK~ -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 64
+	Atom Type: cycloneiii_io_pad
+
+	INPUTS (Driven By):
+		0: [PADIN]	  ~ALTERA_DCLK~~obuf	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [PADOUT]	~ALTERA_DCLK~	LIT INDEX 0 FANOUTS 0
+
+	PARAMETER LIST:
+		EMPTY!!
+
+	DELAY CHAINS:
+		Input Pin to Logic Array Delay 0:	0
+		Input Pin to Logic Array Delay 1:	0
+		Output Pin Delay:	0
+		Output Enable Register Tco Delay:	0
+		Input Pin to Input Register Delay:	0
+		PCI Clock Delay Chain:	0
+
+	IO STANDARD:			2.5 V
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+
+- ATOM ------------------------
+	ATOM_NAME: ~ALTERA_DATA0~~ibuf -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 67
+	Atom Type: cycloneiii_io_ibuf
+
+	INPUTS (Driven By):
+		0: [I]	  ~ALTERA_DATA0~	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [O]	~ALTERA_DATA0~~ibuf	LIT INDEX 0 FANOUTS 0
+
+	PARAMETER LIST:
+		bus_hold                       = false
+		simulate_z_as                  = z
+
+
+- ATOM ------------------------
+	ATOM_NAME: ~ALTERA_DATA0~ -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 66
+	Atom Type: cycloneiii_io_pad
+
+	INPUTS (Driven By):
+		0: [PADIN]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [PADOUT]	~ALTERA_DATA0~	LIT INDEX 0 FANOUTS 1
+
+	PARAMETER LIST:
+		EMPTY!!
+
+	DELAY CHAINS:
+		Input Pin to Logic Array Delay 0:	0
+		Input Pin to Logic Array Delay 1:	0
+		Output Pin Delay:	0
+		Output Enable Register Tco Delay:	0
+		Input Pin to Input Register Delay:	0
+		PCI Clock Delay Chain:	0
+
+	IO STANDARD:			2.5 V
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+
+- ATOM ------------------------
+	ATOM_NAME: ~ALTERA_nCEO~~obuf -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 69
+	Atom Type: cycloneiii_io_obuf
+
+	INPUTS (Driven By):
+		0: [I]	  VCC	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [O]	~ALTERA_nCEO~~obuf	LIT INDEX 0 FANOUTS 1
+		1: NONE
+
+	PARAMETER LIST:
+		open_drain_output              = true
+		bus_hold                       = false
+
+
+- ATOM ------------------------
+	ATOM_NAME: ~ALTERA_nCEO~ -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 68
+	Atom Type: cycloneiii_io_pad
+
+	INPUTS (Driven By):
+		0: [PADIN]	  ~ALTERA_nCEO~~obuf	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [PADOUT]	~ALTERA_nCEO~	LIT INDEX 0 FANOUTS 0
+
+	PARAMETER LIST:
+		EMPTY!!
+
+	DELAY CHAINS:
+		Input Pin to Logic Array Delay 0:	0
+		Input Pin to Logic Array Delay 1:	0
+		Output Pin Delay:	0
+		Output Enable Register Tco Delay:	0
+		Input Pin to Input Register Delay:	0
+		PCI Clock Delay Chain:	0
+
+	IO STANDARD:			2.5 V
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+
+- ATOM ------------------------
+	ATOM_NAME: LED(n) -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 70
+	Atom Type: cycloneiii_io_pad
+
+	INPUTS (Driven By):
+		0: [PADIN]	  LED~output(n)	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [PADOUT]	LED(n)	LIT INDEX 0 FANOUTS 0
+
+	PARAMETER LIST:
+		EMPTY!!
+
+	DELAY CHAINS:
+		Input Pin to Logic Array Delay 0:	0
+		Input Pin to Logic Array Delay 1:	0
+		Output Pin Delay:	0
+		Output Enable Register Tco Delay:	0
+		Input Pin to Input Register Delay:	0
+		PCI Clock Delay Chain:	0
+
+	IO STANDARD:			Bus LVDS
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+
+- ATOM ------------------------
+	ATOM_NAME: LED~output(n) -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 71
+	Atom Type: cycloneiii_io_obuf
+
+	INPUTS (Driven By):
+		0: [I]	  LED~output_pseudo_diffoutn	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [O]	LED~output(n)	LIT INDEX 0 FANOUTS 1
+		1: NONE
+
+	PARAMETER LIST:
+		open_drain_output              = false
+		bus_hold                       = false
+
+
+- ATOM ------------------------
+	ATOM_NAME: LED~output_pseudo_diff -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 72
+	Atom Type: cycloneiii_pseudo_diff_out
+
+	INPUTS (Driven By):
+		0: [I]	  cnt[23]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [O]	LED~output_pseudo_diff	LIT INDEX 0 FANOUTS 1
+		1: [OBAR]	LED~output_pseudo_diffoutn	LIT INDEX 0 FANOUTS 1
+
+	PARAMETER LIST:
+		EMPTY!!
+
+

@@ -1,0 +1,41 @@
+Altera SOPC Builder Version 9.00 Build 132
+Copyright (c) 1999-2009 Altera Corporation.  All rights reserved.
+
+
+# 2014.10.10 15:20:29 (*) mk_custom_sdk starting
+# 2014.10.10 15:20:29 (*) Reading project //Benheck-server/tbhs/Episode 159 - FPGA/counter/ROM.ptf.
+
+# 2014.10.10 15:20:29 (*) Finding all CPUs
+# 2014.10.10 15:20:29 (*) Finding all peripherals
+# 2014.10.10 15:20:29 (*) Finding software components
+# 2014.10.10 15:20:29 (*) (Legacy SDK Generation Skipped)
+# 2014.10.10 15:20:29 (*) (All TCL Script Generation Skipped)
+# 2014.10.10 15:20:29 (*) (No Libraries Built)
+# 2014.10.10 15:20:29 (*) (Contents Generation Skipped)
+# 2014.10.10 15:20:29 (*) mk_custom_sdk finishing
+# 2014.10.10 15:20:29 (*) Starting generation for system: ROM.
+
+
+
+
+# 2014.10.10 15:20:29 (*) Making arbitration and system (top) modules.
+
+# 2014.10.10 15:20:29 (*) Generating Quartus symbol for top level: ROM
+
+# 2014.10.10 15:20:29 (*) Generating Symbol //Benheck-server/tbhs/Episode 159 - FPGA/counter/ROM.bsf
+
+# 2014.10.10 15:20:29 (*) Creating command-line system-generation script: //Benheck-server/tbhs/Episode 159 - FPGA/counter/ROM_generation_script
+
+# 2014.10.10 15:20:29 (*) Running setup for HDL simulator: modelsim
+
+
+# 2014.10.10 15:20:29 (*) Completed generation for system: ROM.
+# 2014.10.10 15:20:29 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:
+  SOPC Builder database : //Benheck-server/tbhs/Episode 159 - FPGA/counter/ROM.ptf 
+  System HDL Model : //Benheck-server/tbhs/Episode 159 - FPGA/counter/ROM.v 
+  System Generation Script : //Benheck-server/tbhs/Episode 159 - FPGA/counter/ROM_generation_script 
+
+# 2014.10.10 15:20:29 (*) SUCCESS: SYSTEM GENERATION COMPLETED.
+
+
+Press 'Exit' to exit.

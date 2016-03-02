@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EnsembleReport
+ name="ROM"
+ kind="com_altera_sopcmodel_ensemble_Ensemble"
+ version="9.0">
+ <!-- Format version 9.0 132 (Future versions may contain additional information.) -->
+ <!-- 2014.10.10.15:19:26 -->
+ <!-- A collection of modules and connections -->
+ <parameter name="deviceFamily">
+  <type>com.altera.entityinterfaces.moduleext.IDeviceFamily$EDeviceFamily</type>
+  <value>CYCLONEIII</value>
+  <derived>false</derived>
+  <enabled>true</enabled>
+  <visible>true</visible>
+  <valid>true</valid></parameter>
+ <parameter name="generateLegacySim">
+  <type>boolean</type>
+  <value>false</value>
+  <derived>false</derived>
+  <enabled>true</enabled>
+  <visible>true</visible>
+  <valid>true</valid></parameter>
+ <parameter name="hardcopyCompatible">
+  <type>boolean</type>
+  <value>false</value>
+  <derived>false</derived>
+  <enabled>true</enabled>
+  <visible>true</visible>
+  <valid>true</valid></parameter>
+ <parameter name="hdlLanguage">
+  <type>com.altera.entityinterfaces.moduleext.IModuleGenerateHDL$HDLLanguage</type>
+  <value>VERILOG</value>
+  <derived>false</derived>
+  <enabled>true</enabled>
+  <visible>true</visible>
+  <valid>true</valid></parameter>
+ <parameter name="projectName">
+  <type>java.lang.String</type>
+  <value>count.quartus</value>
+  <derived>false</derived>
+  <enabled>true</enabled>
+  <visible>true</visible>
+  <valid>true</valid></parameter>
+ <parameter name="systemHash">
+  <type>long</type>
+  <value>-1407664685</value>
+  <derived>false</derived>
+  <enabled>true</enabled>
+  <visible>true</visible>
+  <valid>true</valid></parameter>
+ <parameter name="timeStamp">
+  <type>long</type>
+  <value>1412972334581</value>
+  <derived>false</derived>
+  <enabled>true</enabled>
+  <visible>true</visible>
+  <valid>true</valid></parameter>
+ <module name="clk_0" kind="clock_source" version="9.0">
+  <!-- Describes a single module. Module parameters are
+the requested settings for a module instance. -->
+  <parameter name="clockFrequency">
+   <type>long</type>
+   <value>50000000</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid></parameter>
+  <parameter name="clockFrequencyKnown">
+   <type>boolean</type>
+   <value>true</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid></parameter>
+  <interface name="clk" kind="clock_source" version="9.0">
+   <!-- The connection points exposed by a module instance for the
+particular module parameters. Connection points and their
+parameters are a RESULT of the module parameters. -->
+   <parameter name="clockRate">
+    <type>long</type>
+    <value>50000000</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid></parameter>
+   <parameter name="clockRateKnown">
+    <type>boolean</type>
+    <value>true</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid></parameter>
+   <parameter name="externallyDriven">
+    <type>boolean</type>
+    <value>true</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid></parameter>
+   <parameter name="ptfSchematicName">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid></parameter>
+   <type>clock</type>
+   <isStart>true</isStart>
+   <port>
+    <name>clk_out</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>clk</role></port>
+   <port>
+    <name>reset_n_out</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>reset_n</role></port>
+  </interface>
+  <interface name="clk_in" kind="conduit_end" version="9.0">
+   <!-- The connection points exposed by a module instance for the
+particular module parameters. Connection points and their
+parameters are a RESULT of the module parameters. -->
+   <type>conduit</type>
+   <isStart>false</isStart>
+   <port>
+    <name>clk_in</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>clk</role></port>
+   <port>
+    <name>reset_n_in</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>reset_n</role></port>
+  </interface>
+ </module>
+ <plugin>
+  <instanceCount>1</instanceCount>
+  <name>clock_source</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
+  <displayName>Clock Output</displayName>
+  <version>9.0</version></plugin>
+ <plugin>
+  <instanceCount>1</instanceCount>
+  <name>clock_source</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IModule</subtype>
+  <displayName>Clock Source</displayName>
+  <version>9.0</version></plugin>
+ <plugin>
+  <instanceCount>1</instanceCount>
+  <name>conduit_end</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
+  <displayName>Conduit</displayName>
+  <version>9.0</version></plugin>
+ <reportVersion>9.0 132</reportVersion>
+ <uniqueIdentifier>C860006A306900000148FBB6CD70</uniqueIdentifier>
+</EnsembleReport>

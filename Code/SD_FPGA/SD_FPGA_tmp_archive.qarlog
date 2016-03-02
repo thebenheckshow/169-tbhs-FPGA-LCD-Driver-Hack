@@ -1,0 +1,30 @@
+Quartus II Archive log --	C:/Users/benheck/Google Drive/SD_FPGA/SD_FPGA_tmp_archive.qarlog
+
+Archive:	C:/Users/benheck/Google Drive/SD_FPGA/SD_FPGA_tmp_archive.qar
+Date:		Wed Jan 07 21:43:50 2015
+Quartus II 64-Bit		13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+	=========== Files Selected: ===========
+C:/Users/benheck/Google Drive/SD_FPGA/SD_FPGA.qpf
+C:/Users/benheck/Google Drive/SD_FPGA/SD_FPGA.qsf
+C:/Users/benheck/Google Drive/SD_FPGA/SD_FPGA.v
+C:/Users/benheck/Google Drive/SD_FPGA/SEG7_LUT.v
+C:/Users/benheck/Google Drive/SD_FPGA/SEG7_LUT_2.v
+C:/Users/benheck/Google Drive/SD_FPGA/db/SD_FPGA.cmp.hdb
+C:/Users/benheck/Google Drive/SD_FPGA/db/SD_FPGA.db_info
+C:/Users/benheck/Google Drive/SD_FPGA/incremental_db/compiled_partitions/SD_FPGA.db_info
+C:/Users/benheck/Google Drive/SD_FPGA/slow_SD.ppf
+C:/Users/benheck/Google Drive/SD_FPGA/slow_SD.qip
+C:/Users/benheck/Google Drive/SD_FPGA/slow_SD.v
+C:/Users/benheck/Google Drive/SD_FPGA/slow_SD_bb.v
+c:/altera/13.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 13 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Wed Jan 07 21:43:51 2015
+Source archive file:	C:/Users/benheck/Google Drive/SD_FPGA/SD_FPGA_tmp_archive.qar
+Archive was extracted into	C:/Users/benheck/Google Drive/SD_FPGA_New/
+		 - successfully.

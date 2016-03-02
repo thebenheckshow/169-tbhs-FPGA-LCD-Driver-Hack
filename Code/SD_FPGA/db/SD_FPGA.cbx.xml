@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="SD_FPGA">
+		<CBX_INST_ENTRY INSTANCE_NAME="|SD_FPGA|slow_SD:u0|altpll:altpll_component" CBX_FILE_NAME="slow_SD_altpll.v"/>
+	</PROJECT>
+</LOG_ROOT>

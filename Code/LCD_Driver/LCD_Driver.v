@@ -1,0 +1,33 @@
+module LCD_Driver(
+
+	input clk,
+	input sw0,
+	input sw1,
+	output pair2,
+	output pair1,
+	output pair0,
+	output pairCLK,
+	output LED_indicator
+	
+);
+
+reg [23:0] cnt = 0;
+
+
+always @ (posedge clk)
+begin
+
+	cnt <= cnt + 1'b1;
+
+end
+
+
+assign LED_indicator = cnt[23];
+
+super_clocker	u1
+	(
+		.inclk0(clk),
+		.c0(bit_clock_out)
+	);
+
+endmodule

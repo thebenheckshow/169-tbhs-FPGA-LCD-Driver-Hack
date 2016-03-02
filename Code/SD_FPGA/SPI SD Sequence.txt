@@ -1,0 +1,26 @@
+76-80 clocks whilst CS is high
+
+Send Command 0 to wake up card
+Wake for non-FF response
+
+Send CMD8
+Send CMD55+CMD41
+
+Loop CMD1 until a 0x00 is returned
+
+
+
+
+FAT32 FILE SYSTEM
+
+Sometimes a bunch of hidden sectors
+
+Sector 0 won't contain boot info, rather a small amount of data (mostly HIDDEN SECTORS)
+
+If Sector 0 doesn't look proper, look for HIDDEN SECTOR number
+
+If found, advance Sector 0 Vector by that amount (on my cards it was 8192)
+
+This will contain boot record. Go from here (as if it's 0)
+
+All sector counts are +8192 afterwards. Guess this was happening all along and I didn't realize it

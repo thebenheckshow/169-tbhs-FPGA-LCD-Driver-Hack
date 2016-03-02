@@ -1,0 +1,21 @@
+module ledblink(
+
+	input clk,
+	output LED
+
+
+);
+
+reg [23:0] cnt;
+
+VGA_CLK		u1
+		(	.inclk0(clk),
+			.c0(VGA_CTRL_CLK)
+		);
+
+
+always @(posedge VGA_CTRL_CLK) cnt <= cnt + 24'd1;
+
+assign LED = cnt[23];
+endmodule
+

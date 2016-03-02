@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pin_planner>
+	<pin_info>
+		<pin name="pair0" direction="Output" source="Hierarchy Database" diff_pair_node="pair0(n)" >
+		</pin>
+		<pin name="pair1" direction="Output" source="Hierarchy Database" diff_pair_node="pair1(n)" >
+		</pin>
+		<pin name="pair2" direction="Output" source="Hierarchy Database" diff_pair_node="pair2(n)" >
+		</pin>
+		<pin name="pairCLK" direction="Output" source="Hierarchy Database" diff_pair_node="pairCLK(n)" >
+		</pin>
+		<pin name="pair0(n)" source="Assignments" diff_pair_node="pair0" >
+		</pin>
+	</pin_info>
+	<buses>
+	</buses>
+	<group_file_association>
+	</group_file_association>
+	<pin_planner_file_specifies>
+	</pin_planner_file_specifies>
+</pin_planner>

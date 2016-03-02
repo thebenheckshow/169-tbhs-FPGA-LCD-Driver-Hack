@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system name="ROM">
+ <parameter name="bonusData">bonusData 
+{
+   element clk_0
+   {
+      datum _sortIndex
+      {
+         value = "0";
+         type = "int";
+      }
+   }
+   element onchip_memory2_0
+   {
+      datum _sortIndex
+      {
+         value = "1";
+         type = "int";
+      }
+      datum megawizard_uipreferences
+      {
+         value = "{}";
+         type = "String";
+      }
+   }
+   element ROM
+   {
+   }
+}
+</parameter>
+ <parameter name="deviceFamily" value="CYCLONEIII" />
+ <parameter name="generateLegacySim" value="false" />
+ <parameter name="hardcopyCompatible" value="false" />
+ <parameter name="hdlLanguage" value="VERILOG" />
+ <parameter name="projectName" value="count.qpf" />
+ <parameter name="systemHash" value="2128306158" />
+ <parameter name="timeStamp" value="1412972560528" />
+ <module name="clk_0" kind="clock_source" version="9.0" enabled="1">
+  <parameter name="clockFrequency" value="50000000" />
+  <parameter name="clockFrequencyKnown" value="true" /></module>
+ <module
+   name="onchip_memory2_0"
+   kind="altera_avalon_onchip_memory2"
+   version="9.0"
+   enabled="1">
+  <parameter name="allowInSystemMemoryContentEditor" value="false" />
+  <parameter name="blockType" value="AUTO" />
+  <parameter name="dataWidth" value="8" />
+  <parameter name="dualPort" value="false" />
+  <parameter name="initMemContent" value="true" />
+  <parameter name="initializationFileName" value="test" />
+  <parameter name="instanceID" value="NONE" />
+  <parameter name="memorySize" value="256" />
+  <parameter name="readDuringWriteMode" value="DONT_CARE" />
+  <parameter name="simAllowMRAMContentsFile" value="false" />
+  <parameter name="slave1Latency" value="1" />
+  <parameter name="slave2Latency" value="1" />
+  <parameter name="useNonDefaultInitFile" value="true" />
+  <parameter name="useShallowMemBlocks" value="false" />
+  <parameter name="writable" value="false" /></module>
+ <connection
+   kind="clock"
+   version="9.0"
+   start="clk_0.clk"
+   end="onchip_memory2_0.clk1" /></system>

@@ -1,0 +1,236 @@
+<internal_error>
+	<executable>quartus_asm.exe</executable>
+	<sub_system>unknown</sub_system>
+	<file>unknown</file>
+	<line>0</line>
+	<callstack>
+	0x0151bfbc: DB_HDB + 0x8bfbc (?clear@HDB_SHORT_NAME_DB@@QAIXXZ + 0x57c)
+	0x0153f843: DB_HDB + 0xaf843 (??6HDB_SEARCH_INSTANCE_NAME@@QAIXAAV?$PDB_SEGMENT_TEMPLATE@VPDB_HDB_SEG_BASE@@@@@Z + 0x1680)
+	0x0153fe85: DB_HDB + 0xafe85 (??6HDB_SHORT_NAME_DB@@QAIXAAV?$PDB_SEGMENT_TEMPLATE@VPDB_HDB_SEG_BASE@@@@@Z + 0x4c)
+	0x015411f4: DB_HDB + 0xb11f4 (??6HDB_ASGN_ARGUMENTS@@QAIXAAV?$PDB_SEGMENT_TEMPLATE@VPDB_HDB_SEG_BASE@@@@@Z + 0x359)
+	0x00b43ef9: DB_PDB + 0x3ef9 (?finish_reading@PDB_OBJECT_INFO@@UAIXAAVPDB_SEGMENT_READER@@@Z + 0x39)
+	0x00b4377b: DB_PDB + 0x377b (?finish_reading_all@PDB_SEGMENT_READER@@QAIXXZ + 0x3b)
+	0x00b4d708: DB_PDB + 0xd708 (?pdb_read_ptr@@YI_NAAVPDB_SEGMENT_READER@@P6IXAAVPDB_SEGMENT@@AAPAX@Z2@Z + 0x58)
+	0x014f7dd2: DB_HDB + 0x67dd2 (?create_timegroup_iname@HDB_CMP_ACTION_PT_INSTANCE@@AAI_NPAVHDB_SECTION@@PAPAVHDB_GROUP_INSTANCE_NAME@@@Z + 0x5f2)
+	0x014fc71a: DB_HDB + 0x6c71a (?mv_options_to_timegroups@HDB_CMP_ACTION_PT_INSTANCE@@AAIXXZ + 0x97a)
+	0x015028f9: DB_HDB + 0x728f9 (?read_pdb@HDB_CMP_ACTION_PT_INSTANCE@@SIPAV1@ABVFIO_PATH@@ABV?$basic_string@DU?$char_traits@D@_Dinkum_std@@V?$MEM_STL_ALLOCATOR@D@@@_Dinkum_std@@W4PDB_FILE_TYPE@HDB_ACTION_PT_INSTANCE@@PA_N@Z + 0x199)
+	</callstack>
+	<error>Access Violation at 0X0151BFBC</error>
+	<date>Sat Dec 27 18:27:49 2014</date>
+	<version>Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition</version>
+	<full_error>Access Violation at 0X0151BFBC
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition </full_error>
+</internal_error>
+
+<internal_error>
+	<executable>quartus_fit.exe</executable>
+	<sub_system>MEM</sub_system>
+	<file>/quartus/ccl/mem/mem_section.cpp</file>
+	<line>1270</line>
+	<callstack>
+	0x00232225: CCL_ERR + 0x2225 (?err_report_internal_error@@YIXPBD00H@Z + 0x15)
+	0x002d2443: ccl_mem + 0x2443 (?get_system_memory_counter@MEM_MANAGER@@SIPBVMEM_TRACKER_COUNTER@@XZ + 0x143)
+	0x002df8e3: ccl_mem + 0xf8e3 (??_7MEM_SEGMENT_INTERNAL@@6B@ + 0x15f)
+	</callstack>
+	<error></error>
+	<date>Sat Dec 27 18:32:54 2014</date>
+	<version>Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition</version>
+	<full_error>Free memory corrupted at 07FE6100
+
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition </full_error>
+</internal_error>
+
+<internal_error>
+	<executable>quartus_fit.exe</executable>
+	<sub_system>unknown</sub_system>
+	<file>unknown</file>
+	<line>0</line>
+	<callstack>
+	0xfffffffff14fe21a:
+	0x00f289b9: CCL_MSG + 0x189b9 (?to_tcl_string@MSG_POST@@UBIXAAV?$basic_string@DU?$char_traits@D@_Dinkum_std@@V?$MEM_STL_ALLOCATOR@D@@@_Dinkum_std@@@Z + 0x159)
+	0x0020a128: ccl_mem + 0xa128 (?mem_realloc_wrapper@@YIPAXPAXIPAVMEM_TRACKER_THUNK@@PBD@Z + 0x188)
+	0x00201cac: ccl_mem + 0x1cac (?mem_delete_wrapper@@YIXPAXPAPBD@Z + 0x2c)
+	0x00f3a89d: CCL_MSG + 0x2a89d (?log_to_file@MSG_REPORT@@AAI_NPAVMSG_POST@@I@Z + 0x24d)
+	0x00201cac: ccl_mem + 0x1cac (?mem_delete_wrapper@@YIXPAXPAPBD@Z + 0x2c)
+	0x00f21d35: CCL_MSG + 0x11d35 (?fill_args@MSG_BASE@@QAIXPBDPAD@Z + 0x215)
+	0x00f47baf: CCL_MSG + 0x37baf (?post@MSG_REPORT@@UAI_NPAVMSG_POST@@@Z + 0x23f)
+	0x00f27f91: CCL_MSG + 0x17f91 (?fill_args@MSG_BASE@@QAAXPBDZZ + 0x11)
+	0x053c57da: TSM_STA + 0xf57da (?sta_post_and_delete_message@@YIXPAVMSG_POST@@W4STA_MESSAGE_POST_OPTION@@@Z + 0x50ea)
+	0x053c070d: TSM_STA + 0xf070d (?sta_post_and_delete_message@@YIXPAVMSG_POST@@W4STA_MESSAGE_POST_OPTION@@@Z + 0x1d)
+	</callstack>
+	<error>Access Violation at 0XF14FE21A</error>
+	<date>Sat Dec 27 18:33:46 2014</date>
+	<version>Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition</version>
+	<full_error>Access Violation at 0XF14FE21A
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition </full_error>
+</internal_error>
+
+<internal_error>
+	<executable>quartus_fit.exe</executable>
+	<sub_system>unknown</sub_system>
+	<file>unknown</file>
+	<line>0</line>
+	<callstack>
+	0x0a143430: fitter_vpr20kmain + 0x213430 (vpr_qi_facade_factory + 0x8460)
+	0x0a1429ca: fitter_vpr20kmain + 0x2129ca (vpr_qi_facade_factory + 0x79fa)
+	0x0878ad20: ddb_dygr_fdi + 0x1ad20 (?get_fitter_delay_element@DYGR_FITTER_DELAY_INFO_BODY@@QBIPBVDYGR_FITTER_DELAY_ELEMENT@@W4DEV_ELEMENT_ENUM@@@Z + 0x20)
+	0x0a140450: fitter_vpr20kmain + 0x210450 (vpr_qi_facade_factory + 0x5480)
+	0x0a1410bc: fitter_vpr20kmain + 0x2110bc (vpr_qi_facade_factory + 0x60ec)
+	0x0a0c93e0: fitter_vpr20kmain + 0x1993e0 (??4VPR_QI_FACADE@@QAEAAV0@ABV0@@Z + 0x198390)
+	0x0a05d8c8: fitter_vpr20kmain + 0x12d8c8 (??4VPR_QI_FACADE@@QAEAAV0@ABV0@@Z + 0x12c878)
+	0x0a05cc9b: fitter_vpr20kmain + 0x12cc9b (??4VPR_QI_FACADE@@QAEAAV0@ABV0@@Z + 0x12bc4b)
+	0x09fab8f0: fitter_vpr20kmain + 0x7b8f0 (??4VPR_QI_FACADE@@QAEAAV0@ABV0@@Z + 0x7a8a0)
+	0x09faf7bc: fitter_vpr20kmain + 0x7f7bc (??4VPR_QI_FACADE@@QAEAAV0@ABV0@@Z + 0x7e76c)
+	0x00f3ceef: CCL_MSG + 0x2ceef (?prompt@MSG_OC@@UAI?AW4MSG_VALUE@MSG_PROMPT@@PAVMSG_REPORT@@@Z + 0x4f)
+	0x710c2e72: MSVCR90 + 0x32e72 (_snwscanf_s_l + 0x28)
+	</callstack>
+	<error>Access Violation at 0X0A143430</error>
+	<date>Sat Dec 27 20:03:22 2014</date>
+	<version>Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition</version>
+	<full_error>Access Violation at 0X0A143430
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition </full_error>
+</internal_error>
+
+<internal_error>
+	<executable>quartus_fit.exe</executable>
+	<sub_system>unknown</sub_system>
+	<file>unknown</file>
+	<line>0</line>
+	<callstack>
+	0x7710dfe4: ntdll + 0x2dfe4 (RtlFreeHeap + 0x3f)
+	0x75ab14ac: kernel32 + 0x114ac (HeapFree + 0x13)
+	0x710f3c1a: MSVCR90 + 0x63c1a (free + 0xcc)
+	0x00bf1006: ccl_mem_native + 0x1006 (?mem_native_array_delete@@YIXPAX@Z + 0x6)
+	0x047f747f: tsm_nlspc + 0x747f (??4NLSPC_JSPICE_PROPERTY@@QAEAAV0@ABV0@@Z + 0x4b8f)
+	0x047f862f: tsm_nlspc + 0x862f (??6NLSPC_JSPICE_PROPERTY@@QAIXAAV?$PDB_SEGMENT_TEMPLATE@VPDB_DDB_SEG_BASE@@@@@Z + 0x4ab)
+	0x00ed377b: DB_PDB + 0x377b (?finish_reading_all@PDB_SEGMENT_READER@@QAIXXZ + 0x3b)
+	0x00edd708: DB_PDB + 0xd708 (?pdb_read_ptr@@YI_NAAVPDB_SEGMENT_READER@@P6IXAAVPDB_SEGMENT@@AAPAX@Z2@Z + 0x58)
+	0x0480ba4d: tsm_nlspc + 0x1ba4d (?get_slope_in_s@NLSPC_WAVE_POINT_LIST@@QAINXZ + 0x994d)
+	0x0480b38d: tsm_nlspc + 0x1b38d (?get_slope_in_s@NLSPC_WAVE_POINT_LIST@@QAINXZ + 0x928d)
+	0x0480b1cb: tsm_nlspc + 0x1b1cb (?get_slope_in_s@NLSPC_WAVE_POINT_LIST@@QAINXZ + 0x90cb)
+	0x00381cac: ccl_mem + 0x1cac (?mem_delete_wrapper@@YIXPAXPAPBD@Z + 0x2c)
+	0x0481558e: tsm_nlspc + 0x2558e (?get_slope_in_s@NLSPC_WAVE_POINT_LIST@@QAINXZ + 0x1348e)
+	0x048155b1: tsm_nlspc + 0x255b1 (?get_slope_in_s@NLSPC_WAVE_POINT_LIST@@QAINXZ + 0x134b1)
+	0x048004ee: tsm_nlspc + 0x104ee (?alloc_and_load_data@NLSPC_ENGINE@@QAIXHHPAIPAPAPBDW4dat_timing_models@@@Z + 0x4ce)
+	0x71109487: MSVCR90 + 0x79487 (__STRINGTOLD_L + 0xb52)
+	0x003894f2: ccl_mem + 0x94f2 (?locked_allocate@MEM_SEGMENT_INTERNAL@@AAIPAXPADKKPAVMEM_TRACKER_DATA@@@Z + 0x62)
+	0x710c2ecc: MSVCR90 + 0x32ecc (sprintf + 0x59)
+	0x04b4eb19: tsm_tis + 0x1eb19 (?alloc_and_load_nlspc@TIS_ADVANCED_SPICE_RC_BODY@@IAIX_N0W4dat_timing_models@@@Z + 0x99)
+	</callstack>
+	<error>Access Violation at 0X7710DFE4</error>
+	<date>Sat Dec 27 20:04:39 2014</date>
+	<version>Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition</version>
+	<full_error>Access Violation at 0X7710DFE4
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition </full_error>
+</internal_error>
+
+<internal_error>
+	<executable>quartus_sta.exe</executable>
+	<sub_system>MEM</sub_system>
+	<file>/quartus/ccl/mem/mem_section.cpp</file>
+	<line>1270</line>
+	<callstack>
+	0x001b2225: CCL_ERR + 0x2225 (?err_report_internal_error@@YIXPBD00H@Z + 0x15)
+	0x00272443: ccl_mem + 0x2443 (?get_system_memory_counter@MEM_MANAGER@@SIPBVMEM_TRACKER_COUNTER@@XZ + 0x143)
+	0x765450b1: KERNELBASE + 0x150b1 (GlobalMemoryStatusEx + 0x104)
+	0x76545148: KERNELBASE + 0x15148 (GlobalMemoryStatusEx + 0x19b)
+	0x76ba8fae: kernel32 + 0xb8fae (K32GetProcessMemoryInfo + 0x4d)
+	0x76ba8fae: kernel32 + 0xb8fae (K32GetProcessMemoryInfo + 0x4d)
+	0x7653dd61: KERNELBASE + 0xdd61 (ReadFile + 0x117)
+	0x7653ddb3: KERNELBASE + 0xddb3 (ReadFile + 0x169)
+	</callstack>
+	<error></error>
+	<date>Sat Dec 27 21:05:33 2014</date>
+	<version>Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition</version>
+	<full_error>Free memory corrupted at 09516037
+
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition </full_error>
+</internal_error>
+
+<internal_error>
+	<executable>quartus_fit.exe</executable>
+	<sub_system>unknown</sub_system>
+	<file>unknown</file>
+	<line>0</line>
+	<callstack>
+	0x0a140918: fitter_vpr20kmain + 0x210918 (vpr_qi_facade_factory + 0x5948)
+	0x0a0c943f: fitter_vpr20kmain + 0x19943f (??4VPR_QI_FACADE@@QAEAAV0@ABV0@@Z + 0x1983ef)
+	0x0a0c8ca2: fitter_vpr20kmain + 0x198ca2 (??4VPR_QI_FACADE@@QAEAAV0@ABV0@@Z + 0x197c52)
+	0x0a057ba7: fitter_vpr20kmain + 0x127ba7 (??4VPR_QI_FACADE@@QAEAAV0@ABV0@@Z + 0x126b57)
+	0x0a0578c5: fitter_vpr20kmain + 0x1278c5 (??4VPR_QI_FACADE@@QAEAAV0@ABV0@@Z + 0x126875)
+	0x0a056b0b: fitter_vpr20kmain + 0x126b0b (??4VPR_QI_FACADE@@QAEAAV0@ABV0@@Z + 0x125abb)
+	0x0a4e485f: fitter_FITAPI + 0x4485f (fitapi_run_vpr + 0x6f)
+	0x08d32579: FITTER_FITCC + 0x32579 (?run_vpr@FITCC_EXPERT@@QBI?AW4VPR_RESULT@@XZ + 0xf9)
+	0x08d34372: FITTER_FITCC + 0x34372 (?invoke_fitter@FITCC_EXPERT@@QBI_NXZ + 0x522)
+	0x08c835d8: fitter_fcuda + 0x35d8 (fcuda_execute + 0x1b8)
+	0x0587b621: FITTER_FMAIN + 0xb621 (?fmain_start@@YI_NPAVCMP_FACADE@@@Z + 0x671)
+	0x004075bf: quartus_fit + 0x75bf
+	0x00411d4e: quartus_fit + 0x11d4e
+	0x00ffccff: comp_qexe + 0xccff (?qexe_get_command_line@@YIPBDXZ + 0x26f)
+	0x00fffbbd: comp_qexe + 0xfbbd (?qexe_process_cmdline_arguments@@YI_NPAVQEXE_CMDLINE@@HPAPBD@Z + 0x34d)
+	0x00be8c45: ccl_mem + 0x8c45 (??_U@YAPAXIPAVMEM_TRACKER_THUNK@@PBD@Z + 0x115)
+	0x76b03389: kernel32 + 0x13389 (BaseThreadInitThunk + 0x11)
+	0x77729f44: ntdll + 0x39f44 (RtlInitializeExceptionChain + 0x35)
+	0x00413e19: quartus_fit + 0x13e19
+	0xfffffffffffddfff:
+	0xffffffffffffffff:
+	</callstack>
+	<error>Access Violation at 0X0A140918</error>
+	<date>Sat Dec 27 21:06:44 2014</date>
+	<version>Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition</version>
+	<full_error>Access Violation at 0X0A140918
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition </full_error>
+</internal_error>
+
+<internal_error>
+	<executable>quartus_fit.exe</executable>
+	<sub_system>unknown</sub_system>
+	<file>unknown</file>
+	<line>0</line>
+	<callstack>
+	0x0a140918: fitter_vpr20kmain + 0x210918 (vpr_qi_facade_factory + 0x5948)
+	0x01000077: comp_qexe + 0x10077 (??1QEXE_CMDLINE@@UAE@XZ + 0x257)
+	0x0a0c943f: fitter_vpr20kmain + 0x19943f (??4VPR_QI_FACADE@@QAEAAV0@ABV0@@Z + 0x1983ef)
+	0x0a0c8ca2: fitter_vpr20kmain + 0x198ca2 (??4VPR_QI_FACADE@@QAEAAV0@ABV0@@Z + 0x197c52)
+	0x0a057ba7: fitter_vpr20kmain + 0x127ba7 (??4VPR_QI_FACADE@@QAEAAV0@ABV0@@Z + 0x126b57)
+	0x0a0578c5: fitter_vpr20kmain + 0x1278c5 (??4VPR_QI_FACADE@@QAEAAV0@ABV0@@Z + 0x126875)
+	0x0a056b0b: fitter_vpr20kmain + 0x126b0b (??4VPR_QI_FACADE@@QAEAAV0@ABV0@@Z + 0x125abb)
+	0x0a4e485f: fitter_FITAPI + 0x4485f (fitapi_run_vpr + 0x6f)
+	0x08d62579: FITTER_FITCC + 0x32579 (?run_vpr@FITCC_EXPERT@@QBI?AW4VPR_RESULT@@XZ + 0xf9)
+	0x08d64372: FITTER_FITCC + 0x34372 (?invoke_fitter@FITCC_EXPERT@@QBI_NXZ + 0x522)
+	0x08cc35d8: fitter_fcuda + 0x35d8 (fcuda_execute + 0x1b8)
+	0x0587b621: FITTER_FMAIN + 0xb621 (?fmain_start@@YI_NPAVCMP_FACADE@@@Z + 0x671)
+	0x004075bf: quartus_fit + 0x75bf
+	0x00411d4e: quartus_fit + 0x11d4e
+	0x00ffccff: comp_qexe + 0xccff (?qexe_get_command_line@@YIPBDXZ + 0x26f)
+	0x00fffbbd: comp_qexe + 0xfbbd (?qexe_process_cmdline_arguments@@YI_NPAVQEXE_CMDLINE@@HPAPBD@Z + 0x34d)
+	0x00388c45: ccl_mem + 0x8c45 (??_U@YAPAXIPAVMEM_TRACKER_THUNK@@PBD@Z + 0x115)
+	0x75ec3389: kernel32 + 0x13389 (BaseThreadInitThunk + 0x11)
+	0x77ce9f44: ntdll + 0x39f44 (RtlInitializeExceptionChain + 0x35)
+	0x00413e19: quartus_fit + 0x13e19
+	0xfffffffffffddfff:
+	0xffffffffffffffff:
+	</callstack>
+	<error>Access Violation at 0X0A140918</error>
+	<date>Sun Dec 28 13:21:49 2014</date>
+	<version>Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition</version>
+	<full_error>Access Violation at 0X0A140918
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition </full_error>
+</internal_error>
+
+<internal_error>
+	<executable>quartus_map.exe</executable>
+	<sub_system>unknown</sub_system>
+	<file>unknown</file>
+	<line>0</line>
+	<callstack>
+	0x00d3c4e8: db_acf + 0x1c4e8 (?get_argument_types@ACF_MGR_INPUT_PARAMETERS@@QAIXPAV?$vector@W4ACF_ARGUMENT_TYPE_ENUM@@V?$MEM_STL_ALLOCATOR@W4ACF_ARGUMENT_TYPE_ENUM@@@@@_Dinkum_std@@@Z + 0x1e8)
+	0x0942e833:
+	</callstack>
+	<error>Access Violation at 0X00D3C4E8</error>
+	<date>Tue Dec 30 14:58:08 2014</date>
+	<version>Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition</version>
+	<full_error>Access Violation at 0X00D3C4E8
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition </full_error>
+</internal_error>
+

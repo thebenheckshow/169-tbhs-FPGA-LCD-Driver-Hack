@@ -1,0 +1,7 @@
+module SD_FPGA(
+
+		CLOCK_50,						//	50 MHz
+		CLOCK_50_2,						//	50 MHz
+
+
+);

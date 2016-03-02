@@ -1,0 +1,19 @@
+|count
+clock => counter_out[3]~reg0.CLK
+clock => counter_out[2]~reg0.CLK
+clock => counter_out[1]~reg0.CLK
+clock => counter_out[0]~reg0.CLK
+reset => counter_out~7.OUTPUTSELECT
+reset => counter_out~6.OUTPUTSELECT
+reset => counter_out~5.OUTPUTSELECT
+reset => counter_out~4.OUTPUTSELECT
+enable => counter_out~3.OUTPUTSELECT
+enable => counter_out~2.OUTPUTSELECT
+enable => counter_out~1.OUTPUTSELECT
+enable => counter_out~0.OUTPUTSELECT
+counter_out[0] <= counter_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+counter_out[1] <= counter_out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+counter_out[2] <= counter_out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+counter_out[3] <= counter_out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
